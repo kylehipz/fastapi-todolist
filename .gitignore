@@ -94,3 +94,5 @@ dmypy.json
 # Logs
 *.log
 
+
+.null-ls*
