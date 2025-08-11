@@ -22,8 +22,13 @@ services:
       POSTGRES_USER: todolist-admin
       POSTGRES_PASSWORD: password
       POSTGRES_DB: todolist-app
+    volumes:
+      - todolist-vol:/var/lib/postgresql/data
 
   adminer:
     image: adminer
     ports:
       - 8081:8080
+
+volumes:
+  todolist-vol: {}
