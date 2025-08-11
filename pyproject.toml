@@ -1,0 +1,23 @@
+[project]
+name = "fastapi-todolist"
+version = "1.0.0"
+description = ""
+authors = [
+    {name = "kylehipz",email = "kylehipolito2109@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi (>=0.116.1,<0.117.0)",
+    "uvicorn[standard] (>=0.35.0,<0.36.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.17.1"
+debugpy = "^1.8.16"
+
