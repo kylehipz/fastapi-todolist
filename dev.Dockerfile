@@ -1,5 +1,13 @@
 FROM python:3.13-alpine
 
+# Install build dependencies for postgres
+RUN apk add --no-cache \
+    gcc \
+    musl-dev \
+    libpq-dev \
+    postgresql-dev \
+    python3-dev
+
 WORKDIR /app
 
 RUN pip install --upgrade pip && pip install poetry
